@@ -8,7 +8,7 @@ export default () => {
 
   return (
     <Card >
-      <Title title = { translate('dashboard.title') }/>
+      <Title title ='dashboard.title' />
         <CardContent > { translate('dashboard.card.content') } < /CardContent>
     < /Card >
   );

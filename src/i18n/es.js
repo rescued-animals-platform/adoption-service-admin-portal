@@ -148,9 +148,12 @@ const spanishMessages: TranslationMessages = {
                 name: 'Nombre',
                 species: 'Especie',
                 sex: 'Sexo',
+                estimatedAge: 'Edad estimada',
                 state: {
-                  name: 'Estado'
-                }
+                  name: 'Estado',
+                  adoptionFormId: 'Formulario de adopción',
+                  notes: 'Notas',
+                },
             },
       }
     },
@@ -158,6 +161,28 @@ const spanishMessages: TranslationMessages = {
       title: 'Portal de administración',
       card: {
         content: 'Lorem ipsum sic dolor amet (en español)...',
+      },
+    },
+    animal: {
+      choices: {
+        species: {
+          dog: 'Perro',
+          cat: 'Gato',
+        },
+        state: {
+          looking_for_human: 'Buscando humano',
+          adopted: 'Adoptado',
+          unavailable: 'No disponible',
+        },
+        estimated_age: {
+          young: 'Jóven',
+          young_adult: 'Adulto jóven',
+          senior_adult: 'Adulto',
+        },
+        sex: {
+          male: 'Macho',
+          female: 'Hembra',
+        },
       },
     },
 };

@@ -148,9 +148,12 @@ const englishMessages: TranslationMessages = {
               name: 'Name',
               species: 'Species',
               sex: 'Sex',
+              estimatedAge: 'Estimated age',
               state: {
-                name: 'State'
-              }
+                name: 'State',
+                adoptionFormId: 'Adoption form ID',
+                notes: 'Notes',
+              },
           },
     },
   },
@@ -158,6 +161,28 @@ const englishMessages: TranslationMessages = {
     title: 'Administration Portal',
     card: {
       content: 'Lorem ipsum sic dolor amet...',
+    },
+  },
+  animal: {
+    choices: {
+      species: {
+        dog: 'Dog',
+        cat: 'Cat',
+      },
+      state: {
+        looking_for_human: 'Looking for human',
+        adopted: 'Adopted',
+        unavailable: 'Unavailable',
+      },
+      estimated_age: {
+        young: 'Young',
+        young_adult: 'Young adult',
+        senior_adult: 'Senior adult',
+      },
+      sex: {
+        male: 'Male',
+        female: 'Female',
+      },
     },
   },
 };

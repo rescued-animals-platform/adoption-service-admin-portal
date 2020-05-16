@@ -1,6 +1,8 @@
 import React from 'react';
 import { useMediaQuery } from '@material-ui/core';
-import { SimpleList, List, Datagrid, DateField, TextField, ChipField } from 'react-admin';
+import { SimpleList, List, Datagrid, DateField, TextField, SelectField } from 'react-admin';
+import { speciesChoices, stateChoices } from './choices'
+
 
 export const AnimalList = (props) => {
   const isSmall = useMediaQuery(theme => theme.breakpoints.down('sm'));
@@ -20,8 +22,8 @@ export const AnimalList = (props) => {
             <TextField source="id"/>
             <TextField source="clinicalRecord" />
             <TextField source="name" />
-            <ChipField source="species" />
-            <ChipField source="state.name" />
+            <SelectField source="species" choices={speciesChoices} />
+            <SelectField source="state.name" choices={stateChoices} />
           </Datagrid>
       )}
     </List>
